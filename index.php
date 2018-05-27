@@ -11,7 +11,18 @@ echo $root;*/
 //echo json_encode($search);
 
 //Login
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("Carlos", "Teste123456789");
+echo $usuario;*/
+
+/*
+Criar novo usuario
+ $aluno = new Usuario("Aluno 2", "Aluno123456789");
+$aluno->insert();
+echo $aluno;*/
+
+$usuario = new Usuario();
+$usuario->loadById(1);
+$usuario->update("Professor Carlos", "TesteCarlosProf");
 echo $usuario;
 ?>
