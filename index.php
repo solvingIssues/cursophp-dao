@@ -21,8 +21,13 @@ Criar novo usuario
 $aluno->insert();
 echo $aluno;*/
 
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->loadById(1);
 $usuario->update("Professor Carlos", "TesteCarlosProf");
+echo $usuario;*/
+
+$usuario = new Usuario();
+$usuario->loadById(1);
+$usuario->delete();
 echo $usuario;
 ?>
